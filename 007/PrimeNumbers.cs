@@ -54,8 +54,37 @@ namespace HackerRank_CSharp
 
             return true;
 
-        }   
+        }
         // end of isPrime method
-    } 
+
+        /// <summary>
+        /// Find the nth Prime number
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        protected static int NthPrime(int n)
+        {
+            // Variable holding the prime number
+            int primeNumber = 0;
+            // Counter for the prime number we reached
+            int primeCounter = 0;
+
+            // Loop through the numbers from 2 to infinity until we reach the nth prime
+            for (int i = 2; primeCounter < n ; i++)
+            {
+                // Check if the current number is a prime number
+                if (IsPrime(i))
+                {
+                    // Store the prime number
+                    primeNumber = i;
+                    // Increase the prime number counter
+                    primeCounter++;
+                }
+            }
+            // return the prime number we found
+            return primeNumber;
+        }
+        // end of NthPrime function
+    }
     // end of IsPrime class
 }
