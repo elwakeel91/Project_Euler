@@ -1,5 +1,5 @@
 ﻿// URL of the problem
-// https://www.hackerrank.com/contests/projecteuler/challenges/euler006/problem
+// https://www.hackerrank.com/contests/projecteuler/challenges/euler007/problem
 
 using System;
 using System.Collections.Generic;
